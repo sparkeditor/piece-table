@@ -4,6 +4,7 @@
  *
  * @param {string} fileText - the initial text of the piece table
  * @constructor
+ * @module PieceTable
  */
 const PieceTable = function(fileText) {
     /**
