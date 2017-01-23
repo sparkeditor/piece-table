@@ -1,5 +1,5 @@
 /**
- * A piece table is an efficient data structure to track changes to a text
+ * A piece table is an efficient data structure to track changes to a text.
  * See https://www.cs.unm.edu/~crowley/papers/sds/node15.html for details
  *
  * @param {string} fileText - the initial text of the piece table
@@ -8,12 +8,14 @@
 const PieceTable = function(fileText) {
     /**
      * The file buffer represents the original file text
+     * @private
      * @type {string}
      */
     const file = fileText || "";
 
     /**
      * The add buffer represents text that has been added to the original file
+     * @private
      * @type {string}
      */
     let add = "";
@@ -24,11 +26,13 @@ const PieceTable = function(fileText) {
      * @property {boolean} addBuffer - true if the Piece points to the add buffer, false if it points to the file buffer
      * @property {number} offset - the index in the buffer where the Piece starts
      * @property {number} length - the length of the Piece
+     * @private
      */
 
     /**
      * The piece table describes the sequence as a series of Pieces
      * @type {Piece[]}
+     * @private
      */
     const pieceTable = [{
         addBuffer: false,
