@@ -1,6 +1,6 @@
 /**
  * A piece table is an efficient data structure to track changes to a text.
- * See [https://www.cs.unm.edu/~crowley/papers/sds/node15.html] for details
+ * See <https://www.cs.unm.edu/~crowley/papers/sds/node15.html> for details
  *
  * @param {string} fileText - the initial text of the piece table
  * @constructor

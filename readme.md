@@ -56,7 +56,7 @@ var subString = document.stringAt(9, 8);
 
 ### new PieceTable(fileText)
 A piece table is an efficient data structure to track changes to a text.
-See [https://www.cs.unm.edu/~crowley/papers/sds/node15.html] for details
+See <https://www.cs.unm.edu/~crowley/papers/sds/node15.html> for details
 
 
 | Param | Type | Description |
