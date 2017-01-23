@@ -1,0 +1,28 @@
+{
+  "name": "piece-table",
+  "version": "1.0.0",
+  "description": "An implementation of the piece table data structure",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sparkeditor/piece-table.git"
+  },
+  "keywords": [
+    "text",
+    "editor",
+    "piece",
+    "table",
+    "data",
+    "structure",
+    "efficient"
+  ],
+  "author": "Jeremy Dormitzer <jeremy.dormitzer@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sparkeditor/piece-table/issues"
+  },
+  "homepage": "https://github.com/sparkeditor/piece-table#readme"
+}
