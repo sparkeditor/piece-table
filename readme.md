@@ -1,3 +1,12 @@
+# Table of Contents
+
+* [PieceTable.js](#piecetable-js)
+  * [Overview](#overview)
+  * [Installation](#installation)
+  * [Usage](#usage)
+  * [API Documentation](#api-documentation)
+
+
 # PieceTable.js
 ## A JavaScript implementation of the piece table data structure
 A piece table is an efficient data structure for tracking edits to a text document.
@@ -105,4 +114,5 @@ Gets a string of a particular length from the piece table at a particular offset
 | --- | --- | --- |
 | offset | <code>number</code> | the offset from which to get the string |
 | length | <code>number</code> | the number of characters to return from the offset. If negative, looks backwards |
+
 

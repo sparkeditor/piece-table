@@ -1,9 +1,9 @@
-# PieceTable.js
+# PieceTable.js !heading
 ## A JavaScript implementation of the piece table data structure
 A piece table is an efficient data structure for tracking edits to a text document.
 A detailed explanation can be found [here](https://www.cs.unm.edu/~crowley/papers/sds/node15.html).
 
-## Overview
+## Overview !heading
 A piece table consists of two buffers, the `file` buffer and the `add` buffer, and a
 table of "pieces", or windows into those buffers (the `piece table`). Each piece consists
 of a length, an offset, and a descriptor of which buffer the piece points to. The actual
@@ -16,12 +16,12 @@ never losing data, allowing easy undo operations. Piece table operations are ver
 efficient because they only ever append to the buffers, so no mid-array insertions or
 deletions are performed.
 
-## Installation
+## Installation !heading
 ```bash
 npm install --save piece-table
 ```
     
-## Usage
+## Usage !heading
 ```javascript
 const PieceTable = require("piece-table");
 
@@ -39,5 +39,5 @@ var subString = document.stringAt(9, 8);
 // subString == "document"
 ```
 
-## API Documentation
+## API Documentation !heading
 #include "docs.md"

@@ -1,4 +1,7 @@
 {
   "build": "readme.md",
-  "files": ["docs.md", "readme-base.md"]
+  "files": ["docs.md", "readme-base.md"],
+  "tableOfContents": {
+    "heading": "# Table of Contents"
+  }
 }
