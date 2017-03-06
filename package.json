@@ -1,6 +1,6 @@
 {
   "name": "piece-table",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "An implementation of the piece table data structure",
   "main": "index.js",
   "scripts": {
