@@ -37,6 +37,12 @@ var sequence = document.getSequence();
 
 var subString = document.stringAt(9, 8);
 // subString == "document"
+
+// PieceTable is an iterable:
+for (let character of document) {
+    console.log(character);
+    // 'T', 'h', 'i', 's', ...
+}
 ```
 
 ## API Documentation !heading

@@ -179,6 +179,38 @@ const PieceTable = function(fileText) {
     };
 
     /**
+     * PieceTable iterator
+     * @private
+     */
+    this[Symbol.iterator] = function() {
+        let currentPiece = 0;
+        let currentOffset = 0;
+        return {
+            next: function() {
+                if (currentOffset > pieceTable[currentPiece].length - 1) {
+                    currentPiece++;
+                    currentOffset = 0;
+                }
+                if (currentPiece > pieceTable.length - 1) {
+                    return {done: true};
+                }
+                else {
+                    const piece = pieceTable[currentPiece];
+                    let val;
+                    if (piece.addBuffer) {
+                        val = add.substr(piece.offset + currentOffset, 1);
+                    }
+                    else {
+                        val = file.substr(piece.offset + currentOffset, 1);
+                    }
+                    currentOffset++;
+                    return {value: val, done: false};
+                }
+            }
+        };
+    };
+
+    /**
      * Gets a string of a particular length from the piece table at a particular offset
      * @param {number} offset - the offset from which to get the string
      * @param {number} length - the number of characters to return from the offset. If negative, looks backwards
